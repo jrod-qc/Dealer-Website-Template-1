@@ -1,0 +1,1117 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/transfonter.org-unpack-20210617-162034/Avenir-Medium-09.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Avenir";
+}
+
+a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
+/* Modal Form Section */
+
+.form-modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #05102ee0;
+    position: fixed;
+    z-index: 99;
+    visibility: hidden;
+}
+
+.form-modal-container-animation {
+    animation: modalAnimation .5s forwards;
+    -webkit-animation: modalAnimation .5s forwards;
+}
+
+@keyframes modalAnimation {
+    from {
+        background-color: transparent;
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+        background-color: #05102ee0;
+    }
+}
+
+.form-modal-content {
+    position: absolute;
+    width: 70%;
+    max-width: 700px;
+    height: 50%;
+    max-height: 700px;
+    background-color: #fff;
+    animation: modalContentAnimation .5s forwards;
+    -webkit-animation: modalContentAnimation .5s forwards;
+    z-index: 100;
+}
+
+@keyframes modalContentAnimation {
+    from {
+        visibility: 0;
+        top: -800px;
+    }
+    to {
+        visibility: 100%;
+        top: 25%;
+    }
+}
+
+
+/* Form Modal Exit Animation */
+
+.form-modal-container-exit {
+    animation: modalReversalAnimation .5s forwards;
+    -webkit-animation: modalReversalAnimation .5s forwards;
+}
+
+@keyframes modalReversalAnimation {
+    from {
+        visibility: visible;
+        background-color: #05102ee0;
+    }
+    to {
+        display: none;
+        visibility: hidden;
+        background-color: transparent;
+    }
+}
+
+.form-modal-content-exit {
+    animation: modalContentReversalAnimation .5s forwards;
+    -webkit-animation: modalContentReversalAnimation .5s forwards;
+}
+
+@keyframes modalContentReversalAnimation {
+    from {
+        visibility: 0;
+        top: 25%;
+    }
+    to {
+        visibility: 100%;
+        top: -800px;
+        display: none !important;
+    }
+}
+
+.form-modal-wrapper {
+    width: 50%;
+    max-width: 1440px;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-modal-exit-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.form-modal-exit-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form-modal-exit-btn>a {
+    padding: 10px 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+/* Nav Top Bar Section */
+
+.nav-main-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.nav-top-bar {
+    width: 100%;
+    height: auto;
+    background-color: #38ae19;
+    padding: 10px 0;
+}
+
+.nav-top-bar>h3 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Main Nav Section */
+
+.nav-container {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.125);
+    box-shadow: 0 5px 5px #0000001f;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.nav-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-left-side,
+.nav-right-side {
+    width: 40%;
+}
+
+.nav-logo {
+    width: 20%;
+}
+
+.nav-left-side>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-left-side>ul>li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #373737;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-left-side>ul>li:after {
+    list-style: none;
+    background-color: #38ae19;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+}
+
+.nav-left-side>ul>li:hover::after {
+    width: 100%;
+}
+
+.nav-left-side>ul>li>a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-logo>p {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-logo>p>a>img {
+    width: 50%;
+}
+
+.nav-right-side>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-right-side>ul>li {
+    font-weight: bold;
+    color: #373737;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-right-side>ul>li:after {
+    list-style: none;
+    background-color: #38ae19;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+}
+
+.nav-right-side>ul>li:hover::after {
+    width: 100%;
+}
+
+.nav-right-side>ul>li>a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Mobile Nav Section */
+
+.nav-mobile-trigger {
+    display: none;
+}
+
+.nav-mobile-btn {
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.nav-mobile-btn:hover {
+    color: #38ae19;
+}
+
+.mobile-nav-container {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    right: -250px;
+    top: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.mobile-nav-exit-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #05102e;
+}
+
+.mobile-nav-exit-btn {
+    text-align: right;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.mobile-nav-exit-btn:hover {
+    color: #38ae19;
+}
+
+.mobile-nav-wrapper {
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+}
+
+.mobile-nav-wrapper>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-wrapper>ul>li {
+    width: 90%;
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mobile-nav-wrapper>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #373737;
+    padding: 10px 0;
+}
+
+.mobile-nav-wrapper>ul>li>a:hover {
+    background-color: #38ae19;
+    color: #fff;
+}
+
+
+/* Hero Section */
+
+.hero-container {
+    width: 100%;
+    height: 80%;
+    padding: 230px 0 100px 0;
+    /* max-height: 600px; */
+    background-image: url("images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content:nth-child(1)>img {
+    width: 100%;
+}
+
+.hero-text-content {
+    width: 100%;
+    max-width: 700px;
+}
+
+.main-header-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-header-text>h1 {
+    width: 95%;
+    max-width: 800px;
+    color: #fff;
+    font-size: 4.3rem;
+    text-align: center;
+}
+
+.main-header-text>span {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: auto;
+    color: #fff;
+    top: 95px;
+    right: 115px;
+}
+
+.trademark {
+    font-size: 2rem !important;
+    /* border: 1px solid; */
+}
+
+.hero-text-content>ul {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text-content>ul>li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.hero-text-content>ul>li>span {
+    width: 5%;
+    color: #38ae19;
+    font-size: 2rem;
+}
+
+.hero-text-content>ul>li>h3 {
+    width: 92%;
+    color: #fff;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.hero-request-btn-container {
+    width: 60%;
+    background-color: #38ae19;
+    margin-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.hero-request-btn-container:hover {
+    background-color: #277e11;
+}
+
+.hero-request-btn-container>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.hero-content:nth-child(3) {
+    display: none;
+}
+
+
+/* Products Section */
+
+.products-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.products-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.products-content {
+    width: 49%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #242424;
+    margin-top: 20px;
+}
+
+.products-content:nth-child(1) {
+    background: #0a1f5a9c url("images/Stealth-lifestyle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: overlay;
+}
+
+.products-content:nth-child(2) {
+    background: #0a1f5a9c url("images/attic-fans-lifestyle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: overlay;
+}
+
+.products-content:nth-child(3) {
+    background: #0a1f5a9c url("images/garage-fan-lifestyle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: overlay;
+}
+
+.products-content:nth-child(4) {
+    background: #0a1f5a9c url("images/RF-controller-lifestyle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: overlay;
+}
+
+.products-content>h2>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: #fff 1px solid;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.products-content>h2>a:hover {
+    background-color: #fff;
+    color: #373737;
+}
+
+
+/* Dealer Section */
+
+.dealer-container {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-image: url("images/dealer-vans-lifestyle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dealer-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dealer-main-image {
+    width: 100%;
+    /* height: 700px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dealer-guy-image {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.dealer-guy-image>img {
+    width: 100%;
+}
+
+
+/* Dealer Badge Section */
+
+.dealer-badge-container {
+    width: 100%;
+    height: auto;
+}
+
+.dealer-badge-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #05102e;
+}
+
+.dealer-badge-content:nth-child(1) {
+    width: 20%;
+    text-align: center;
+}
+
+.dealer-badge-content>img {
+    width: 100%;
+}
+
+.dealer-badge-content:nth-child(2) {
+    width: 50%;
+}
+
+.dealer-badge-content:nth-child(2)>h2 {
+    width: 100%;
+    max-width: 1000px;
+    font-size: 3.2rem;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.dealer-badge-content:nth-child(2)>h3 {
+    color: #38ae19;
+    font-size: 1.5rem;
+}
+
+
+/* Credibility Section */
+
+.credibility-container {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.credibility-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.credibility-content {
+    width: 25%;
+    text-align: center;
+}
+
+.credibility-content>img {
+    width: 40%;
+    max-width: 150px;
+    min-width: 50px;
+}
+
+.credibility-content>h3 {
+    font-size: 1.5rem;
+}
+
+
+/* Built in america */
+
+.built-in-america-container {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #38ae19;
+}
+
+.built-in-america-wrapper {
+    width: 80%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.built-in-america-content {
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.built-in-america-content>h1 {
+    font-size: 18rem;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 180px;
+    padding: 0;
+    margin: 0 auto;
+    color: #05102e;
+}
+
+.built-in-america-content:nth-child(1)>h2:nth-child(2) {
+    font-size: 4rem;
+    color: #05102e;
+}
+
+.built-in-america-content:nth-child(1)>h2:nth-child(3) {
+    font-size: 4.9rem;
+    line-height: 50px;
+    color: #05102e;
+}
+
+.built-in-america-content>h2 {
+    width: 50%;
+    max-width: 350px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.built-in-america-content>h3 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 350px;
+    color: #05102e;
+}
+
+.built-in-america-content>img {
+    width: 100%;
+}
+
+
+/* Benefits Section */
+
+.benefits-container {
+    width: 100%;
+    padding: 40px 0 50px 0;
+}
+
+.benefits-wrapper {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    perspective: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.benefits-content {
+    position: relative;
+    width: 23%;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-top: 20px;
+}
+
+.benefits-wrapper:hover .benefits-content {
+    transform: rotateY(180deg);
+}
+
+.benefits-card-front,
+.benefits-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.benefits-card-front {
+    background-color: #bbb;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:1385px) {
+    /* Hero Section */
+    .main-header-text>h1 {
+        font-size: 3.3rem;
+        max-width: 500px;
+    }
+    .hero-text-content>ul {
+        width: 90%;
+    }
+    .hero-text-content>ul>li>h3 {
+        font-size: 1.5rem;
+    }
+    /* Dealer Section */
+    .dealer-badge-content:nth-child(2)>h2 {
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (max-width:1080px) {
+    /* Hero Section */
+    .main-header-text>h1 {
+        font-size: 2.5rem;
+        max-width: 400px;
+    }
+    .hero-text-content>ul {
+        width: 100%;
+    }
+    .hero-text-content>ul>li>h3 {
+        font-size: 1.5rem;
+    }
+    .hero-request-btn-container>a {
+        font-size: 1.2rem;
+    }
+    .hero-text-content>ul>li>span {
+        width: 8%;
+    }
+    /* Built in America */
+    .built-in-america-content>h1 {
+        font-size: 8rem;
+        line-height: 85px;
+    }
+    .built-in-america-content:nth-child(1)>h2:nth-child(2) {
+        font-size: 2rem;
+    }
+    .built-in-america-content:nth-child(1)>h2:nth-child(3) {
+        font-size: 2.5rem;
+    }
+    .built-in-america-content>h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width:951px) {
+    .mobile-nav-container {
+        right: -250px !important;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    /* Form Modal Section */
+    .form-modal-content {
+        width: 90%;
+        max-width: none;
+    }
+    /* Nav Section */
+    .nav-left-side,
+    .nav-right-side {
+        display: none;
+    }
+    .nav-logo {
+        width: 75%;
+    }
+    .nav-logo>p {
+        text-align: left;
+    }
+    .nav-logo>p>a>img {
+        width: 20%;
+        min-width: 150px;
+    }
+    /* Mobile Nav Section */
+    .nav-mobile-trigger {
+        width: 15%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav-mobile-trigger>p {
+        text-align: right;
+        margin: 0;
+    }
+    /* Hero Section */
+    .hero-content {
+        width: 100%;
+    }
+    .hero-content:nth-child(1) {
+        display: none;
+    }
+    .hero-text-content>ul {
+        width: 70%;
+    }
+    .hero-content:nth-child(3) {
+        display: block;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .hero-content>img {
+        width: 70%;
+    }
+    /* Dealer Section */
+    .dealer-badge-content {
+        width: 90% !important;
+    }
+    .dealer-badge-content>img {
+        width: 40%;
+    }
+    .dealer-badge-content:nth-child(2)>h2 {
+        text-align: center;
+    }
+    .dealer-badge-content:nth-child(2)>h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    /* Hero Section */
+    .main-header-text>h1 {
+        font-size: 3.3rem;
+        max-width: 500px;
+    }
+    .hero-text-content>ul {
+        width: 80%;
+    }
+    /* Products Section */
+    .products-content {
+        width: 95%;
+    }
+    /* Badge Section  */
+    .dealer-badge-content:nth-child(2)>h2 {
+        font-size: 1.5rem;
+    }
+    /* Built in America */
+    .built-in-america-container {
+        padding: 50px 0;
+    }
+    .built-in-america-wrapper {
+        width: 95%;
+    }
+    .built-in-america-content:nth-child(1) {
+        width: 23%;
+    }
+    .built-in-america-content>h1,
+    .built-in-america-content>h2,
+    .built-in-america-content>h3 {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    /* Top Bar Section */
+    .nav-top-bar>h3 {
+        font-size: .8rem;
+    }
+    /* Hero Section */
+    .hero-text-content>ul {
+        width: 65%;
+    }
+    .hero-text-content>ul>li>span {
+        width: 7%;
+        font-size: 1.5rem;
+    }
+    .main-header-text>h1 {
+        font-size: 1.9rem;
+        max-width: 340px;
+    }
+    .hero-text-content>ul>li>h3 {
+        width: 88%;
+        font-size: 1.1rem;
+    }
+    .hero-request-btn-container>a {
+        font-size: 1.1rem;
+    }
+    /* Badge Section */
+    .dealer-badge-content:nth-child(2)>h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    .dealer-badge-content:nth-child(2)>h3 {
+        font-size: 1rem;
+    }
+    /* Credibility Section */
+    .credibility-content {
+        width: 49%;
+        padding-top: 20px;
+    }
+    .credibility-content>h3 {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    /* Built in America */
+    .built-in-america-content {
+        width: 90%;
+    }
+    .built-in-america-content:nth-child(1) {
+        width: 80%;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    /* Top Bar Section */
+    .nav-top-bar>h3 {
+        width: 80%;
+        max-width: 250px;
+        font-size: .8rem;
+    }
+    /* Hero Section */
+    .hero-text-content>ul {
+        width: 91%;
+    }
+    .hero-content>img {
+        width: 90%;
+    }
+    /* Dealer Section */
+    .dealer-guy-image {
+        width: 80%;
+    }
+    /* Credibility Section */
+    .credibility-content {
+        width: 90%;
+    }
+    .credibility-content>img {
+        width: 30%;
+    }
+}
+
+
+/* Height Queries */
+
+@media only screen and (max-height:700px) {
+    .form-modal-wrapper {
+        height: 75%;
+    }
+    .form-modal-content {
+        position: relative;
+        height: 100%;
+        animation: modalContentAnimation 1s forwards;
+        -webkit-animation: modalContentAnimation 1s forwards;
+    }
+    @keyframes modalContentAnimation {
+        from {
+            visibility: 0;
+            top: -800px;
+        }
+        to {
+            visibility: 100%;
+            top: 5%;
+        }
+    }
+}
