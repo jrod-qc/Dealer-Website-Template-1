@@ -29,7 +29,7 @@ a {
     align-items: center;
     background-color: #05102ee0;
     position: fixed;
-    z-index: 99;
+    z-index: 100;
     visibility: hidden;
 }
 
@@ -146,6 +146,7 @@ a {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 99;
 }
 
 .nav-top-bar {
@@ -311,6 +312,8 @@ a {
     background-color: #fff;
     right: -250px;
     top: 0;
+    z-index: 99;
+    box-shadow: 0px 5px 5px #0000005c;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -483,7 +486,7 @@ a {
 }
 
 .hero-request-btn-container {
-    width: 60%;
+    width: 75%;
     background-color: #38ae19;
     margin-top: 20px;
     border-radius: 10px;
@@ -796,14 +799,29 @@ a {
 
 .benefits-container {
     width: 100%;
+    max-width: 2000px;
     padding: 40px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.benefits-title {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.benefits-title>h1 {
+    text-align: center;
+    font-size: 3.5rem;
 }
 
 .benefits-wrapper {
     background-color: transparent;
-    width: 100%;
+    width: 23%;
     height: auto;
-    perspective: 1000px;
+    /* perspective: 1000px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -812,7 +830,7 @@ a {
 
 .benefits-content {
     position: relative;
-    width: 23%;
+    width: 100%;
     height: 400px;
     text-align: center;
     transition: transform 0.8s;
@@ -834,22 +852,1095 @@ a {
 }
 
 .benefits-card-front {
-    background-color: #bbb;
+    background-color: #0a205a;
     color: black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.benefits-card-front>img {
+    width: 50%;
+}
+
+.benefits-card-front>h2 {
+    color: #fff;
+    width: 75%;
+}
+
 .benefits-card-back {
-    background-color: dodgerblue;
+    background-color: #0a205a;
     color: white;
     transform: rotateY(180deg);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.benefits-card-back>p {
+    width: 90%;
+}
+
+
+/* Calculator Section */
+
+.calculator-box {
+    background-color: #38ae19;
+    padding: 100px 0;
+}
+
+.calculator-title {
+    width: 100%;
+    padding: 0;
+}
+
+.calculator-title>h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.calculator-title>h3 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#how-much-you-save {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#how-much-you-save>h2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+.hmys-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40%;
+}
+
+.hmys-list>li {
+    list-style: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+.cal-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#cal-btn-results {
+    display: inline-block;
+    background-color: #242424;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#cal-btn-results:hover {
+    background-color: #131313;
+}
+
+#slider-and-results-wrapper>.title-section {
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+}
+
+#slider-and-results-wrapper>.title-section>h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+
+.comparison-main-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding-top: 50px;
+}
+
+.comparison-box-qc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#comparison-box-qc-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 80%;
+    max-width: 700px;
+    min-height: 400px;
+    height: 50%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.selection-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+#slider-and-results-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.selection-box-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+
+.hours-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.hours-title,
+#slider-hours-results {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.hours-title {
+    font-size: 2em;
+}
+
+.day-box,
+.month-box,
+.year-box {
+    width: 33%;
+}
+
+.day-title,
+.month-title,
+.year-title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7em;
+}
+
+#slider-day-results,
+#slider-month-results,
+#slider-year-results {
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.slider-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+}
+
+.slider-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+#slider-hours-range {
+    width: 80%;
+}
+
+#fan-selection {
+    width: 45%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    border: none;
+}
+
+#trident-models,
+#stealth-models {
+    display: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    border: none;
+}
+
+
+/* This is the Slider Input Section */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    width: 100%;
+    color: transparent;
+    background: lightgray;
+    border-radius: 999px;
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    background: rgb(41, 41, 41);
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+input[type="range"]::-moz-range-track {
+    -webkit-appearance: none;
+    width: 100%;
+    color: transparent;
+    background: lightgray;
+    border-radius: 999px;
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    background: rgb(41, 41, 41);
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: black;
+    -webkit-box-shadow: 0px 2px 10px -2px black;
+    box-shadow: 0px 2px 10px -2px black;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    border: 0px solid #000000;
+    background: url("https://quietcoolsystems.com/global-images/v3-landing-page-image/circle-fan-logo.webp") #ffffff;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: black;
+    -webkit-box-shadow: 0px 2px 10px -2px black;
+    box-shadow: 0px 2px 10px -2px black;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    border: 0px solid #000000;
+    background: url("https://quietcoolsystems.com/global-images/v3-landing-page-image/circle-fan-logo.webp") #ffffff;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: red;
+}
+
+input[type="range"]::-moz-range-thumb::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: red;
+}
+
+
+/* This is the AC Section */
+
+.comparison-box-ac {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#comparison-box-ac-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 80%;
+    max-width: 800px;
+    height: 50%;
+    min-height: 400px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#slider-and-results-kwh-wrapper>.title-section {
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+}
+
+#slider-and-results-kwh-wrapper>.title-section>h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.selection-box-ac {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#slider-and-results-kwh-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#ac-kwh-selection {
+    width: 45%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    border: none;
+}
+
+#slider-day-results-ac,
+#slider-month-results-ac,
+#slider-year-results-ac {
+    width: 80%;
+    /*padding: 2%;*/
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.hours-title-ac,
+#slider-hours-results-ac {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.slider-wrapper-ac {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+
+/* This is the Slider Input Section AC*/
+
+.slider-wrapper-ac>input[type="range"] {
+    -webkit-appearance: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+}
+
+.slider-wrapper-ac>input[type="range"]:focus {
+    outline: none;
+}
+
+.slider-wrapper-ac>input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    width: 100%;
+    color: transparent;
+    background: lightgray;
+    border-radius: 999px;
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    background: rgb(255, 255, 255);
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.slider-wrapper-ac>input[type="range"]::-moz-range-track {
+    -webkit-appearance: none;
+    width: 100%;
+    color: transparent;
+    background: lightgray;
+    border-radius: 999px;
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    background: rgb(255, 255, 255);
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.slider-wrapper-ac>input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: black;
+    -webkit-box-shadow: 0px 2px 10px -2px black;
+    box-shadow: 0px 2px 10px -2px black;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    border: 0px solid #000000;
+    background: #1f1f1f;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-wrapper-ac>input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: black;
+    -webkit-box-shadow: 0px 2px 10px -2px black;
+    box-shadow: 0px 2px 10px -2px black;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    box-shadow: 1.1px 1.1px 6.8px rgba(0, 0, 0, 0), 0px 0px 1.1px rgba(13, 13, 13, 0);
+    border: 0px solid #000000;
+    background: #1f1f1f;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-wrapper-ac>input[type="range"]::-webkit-slider-thumb::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: red;
+}
+
+.slider-wrapper-ac>input[type="range"]::-moz-range-thumb::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: red;
+}
+
+
+/* Call to Action Section */
+
+.testimonials-title {
+    width: 100%;
+    text-align: center;
+}
+
+.testimonials-title>h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    padding-bottom: 50px;
+}
+
+.call-to-action-container {
+    width: 100%;
+    height: auto;
+    background-image: url("images/moon-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.call-to-action-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-content:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 180px 0 0 0;
+    width: 60%;
+}
+
+.call-to-action-content:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+.call-to-action-content:nth-child(2)>h1 {
+    width: 100%;
+    max-width: 560px;
+    text-align: center;
+    font-size: 4.5rem;
+    color: #fff;
+    line-height: 70px;
+}
+
+.call-to-action-content:nth-child(2)>h2 {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 45px;
+}
+
+.call-to-action-content:nth-child(1)>img {
+    width: 100%;
+}
+
+
+/* Testimonials Section */
+
+.testimonials-container {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    background-color: #0a205a;
+}
+
+.mySlides {
+    width: 65%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.testimonials-rating {
+    width: 15%;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-rating>p {
+    color: rgb(255, 183, 0);
+    font-size: 1.5rem;
+}
+
+.testimonials-text {
+    width: 90%;
+}
+
+.testimonials-text>p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 20px;
+}
+
+.testimonials-customer-name {
+    width: 90%;
+}
+
+.testimonials-customer-name>h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.testimonials-current-slide-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonials-current-slide-wrapper {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.testimonials-current-slide-wrapper>p {
+    width: 30px;
+}
+
+.testimonials-controls {
+    width: 80%;
+    text-align: center;
+}
+
+
+/* * {
+    box-sizing: border-box
+} */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    /*top: 50%;
+    */
+    width: auto;
+    margin-top: -150px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.testimonials-btn-container {
+    width: 20%;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #38ae19;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.testimonials-btn-container:hover {
+    background-color: #277e11;
+}
+
+.testimonials-btn-container>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+
+/* Experts Section */
+
+.experts-container {
+    width: 100%;
+    max-width: 2000px;
+    padding: 40px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experts-title {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.experts-title>h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.experts-wrapper {
+    background-color: transparent;
+    width: 23%;
+    height: auto;
+    /* perspective: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experts-content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-top: 20px;
+}
+
+.experts-wrapper:hover .experts-content {
+    transform: rotateY(180deg);
+}
+
+.experts-card-front,
+.experts-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.experts-card-front {
+    background-color: #f2f3f3;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experts-card-front>img {
+    width: 50%;
+}
+
+.experts-card-front>h2 {
+    color: #fff;
+    width: 75%;
+}
+
+.experts-card-back {
+    background-color: #0a205a;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experts-card-back>p {
+    width: 90%;
+}
+
+
+/* ROI Section */
+
+.roi-container {
+    width: 100%;
+    height: auto;
+}
+
+.roi-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.roi-content {
+    width: 49%;
+    height: auto;
+}
+
+.roi-content>h2 {
+    text-align: center;
+    width: 85%;
+    max-width: 665px;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.roi-content>img {
+    width: 100%;
 }
 
 
@@ -870,6 +1961,56 @@ a {
     /* Dealer Section */
     .dealer-badge-content:nth-child(2)>h2 {
         font-size: 2.1rem;
+    }
+    /* ROI Section */
+    .roi-content>h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    /* Calculator Section */
+    .selection-box-ac>h2,
+    .selection-box>h2 {
+        width: 90%;
+        font-size: 2em;
+    }
+    #comparison-box-qc-wrapper,
+    #comparison-box-ac-wrapper,
+    #ac-kwh-selection {
+        width: 90%;
+    }
+    #fan-selection,
+    #trident-models,
+    #stealth-models,
+    #ac-kwh-selection {
+        font-size: 1em;
+    }
+    .hours-box>h2,
+    .day-title,
+    .month-title,
+    .year-title,
+    #slider-and-results-wrapper>.title-section>h3,
+    #slider-day-results,
+    #slider-month-results,
+    #slider-year-results,
+    #slider-and-results-kwh-wrapper>.title-section>h3,
+    #slider-day-results-ac,
+    #slider-month-results-ac,
+    #slider-year-results-ac {
+        font-size: 1.5em !important;
+    }
+    .comparison-main-box {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    /* Call to Action Section */
+    .call-to-action-content:nth-child(2)>h1 {
+        font-size: 3.5rem;
+    }
+    .call-to-action-content:nth-child(2)>h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -904,6 +2045,25 @@ a {
     }
     .built-in-america-content>h3 {
         font-size: 1.6rem;
+    }
+    /* Benefits Section */
+    .benefits-wrapper {
+        width: 31%;
+    }
+    /* Call To Action */
+    .call-to-action-content:nth-child(2)>h1 {
+        font-size: 2.5rem;
+    }
+    .call-to-action-content:nth-child(2)>h2 {
+        font-size: 1.9rem;
+    }
+    /* Experts Section */
+    .benefits-wrapper {
+        width: 31%;
+    }
+    /* ROI Section */
+    .roi-content>h2 {
+        font-size: 1.4rem;
     }
 }
 
@@ -976,6 +2136,38 @@ a {
     .dealer-badge-content:nth-child(2)>h3 {
         text-align: center;
     }
+    /* Benefits Section */
+    .benefits-wrapper {
+        width: 47%;
+    }
+    .benefits-title>h1 {
+        font-size: 2.5rem;
+    }
+    .benefits-card-front>h2 {
+        width: 60%;
+        font-size: 1.2rem;
+    }
+    .benefits-card-front>img {
+        width: 35%;
+    }
+    /* Calculator Section */
+    .calculator-title>h2 {
+        font-size: 2.5rem;
+    }
+    /* Experts Section */
+    .experts-wrapper {
+        width: 47%;
+    }
+    .experts-title>h1 {
+        font-size: 2.5rem;
+    }
+    .experts-card-front>h2 {
+        width: 60%;
+        font-size: 1.2rem;
+    }
+    .experts-card-front>img {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -1010,6 +2202,133 @@ a {
     .built-in-america-content>h3 {
         width: 100%;
         max-width: none;
+    }
+    /* Benefits Section */
+    .benefits-card-front>h2 {
+        width: 60%;
+        font-size: 1.2rem;
+    }
+    .benefits-card-front>img {
+        width: 35%;
+    }
+    /* Calculator Section */
+    .selection-box-ac>h2,
+    .selection-box>h2 {
+        width: 90%;
+        font-size: 2em;
+    }
+    #comparison-box-qc-wrapper,
+    #comparison-box-ac-wrapper,
+    #ac-kwh-selection {
+        width: 90%;
+    }
+    #fan-selection,
+    #trident-models,
+    #stealth-models,
+    #ac-kwh-selection {
+        font-size: 1em;
+    }
+    .hours-box>h2,
+    .day-title,
+    .month-title,
+    .year-title,
+    #slider-and-results-wrapper>.title-section>h3,
+    #slider-day-results,
+    #slider-month-results,
+    #slider-year-results,
+    #slider-and-results-kwh-wrapper>.title-section>h3,
+    #slider-day-results-ac,
+    #slider-month-results-ac,
+    #slider-year-results-ac {
+        font-size: 1.3em !important;
+    }
+    .comparison-main-box {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .comparison-box-ac,
+    .comparison-box-qc {
+        padding: 0 !important;
+    }
+    /* Call to Action Section */
+    .call-to-action-container {
+        background-position: left;
+    }
+    .call-to-action-wrapper {
+        flex-direction: column-reverse;
+    }
+    .call-to-action-content:nth-child(1) {
+        padding-top: 20px;
+        width: 90%;
+    }
+    .call-to-action-content:nth-child(2) {
+        padding-top: 50px;
+        width: 90%;
+        max-width: 320px;
+    }
+    /* Testimonials Section */
+    .mySlides {
+        width: 80%;
+        height: auto;
+    }
+    .testimonials-title>h1 {
+        font-size: 2.5rem;
+    }
+    /* Experts Section */
+    .experts-card-front>h2 {
+        width: 60%;
+        font-size: 1.2rem;
+    }
+    .experts-card-front>img {
+        width: 35%;
+    }
+    /* RIO Section */
+    .roi-wrapper {
+        flex-direction: column-reverse;
+    }
+    .roi-content {
+        width: 90%;
+    }
+    .roi-content>h2 {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:735px) {
+    /* Calculator Section */
+    .calculator-box>.title-section>h3 {
+        font-size: 1em;
+    }
+    .comparison-main-box {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .comparison-box-qc,
+    .comparison-box-ac {
+        width: 90%;
+    }
+    .selection-box-ac>h2,
+    .selection-box>h2 {
+        font-size: 2em;
+    }
+    .hours-box>h2,
+    .day-title,
+    .month-title,
+    .year-title,
+    #slider-and-results-wrapper>.title-section>h3,
+    #slider-day-results,
+    #slider-month-results,
+    #slider-year-results,
+    #slider-and-results-kwh-wrapper>.title-section>h3,
+    #slider-day-results-ac,
+    #slider-month-results-ac,
+    #slider-year-results-ac {
+        font-size: 1.2em !important;
+    }
+    #slider-and-results-wrapper>.title-section,
+    #slider-and-results-kwh-wrapper>.title-section {
+        width: 100%;
     }
 }
 
@@ -1062,6 +2381,48 @@ a {
         width: 80%;
         padding-bottom: 50px;
     }
+    /* Benefits Section */
+    .benefits-title>h1 {
+        font-size: 2rem;
+    }
+    .benefits-card-front>h2 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .benefits-card-front>img {
+        width: 35%;
+    }
+    /* Calculator Section */
+    .calculator-title>h2 {
+        font-size: 2rem;
+    }
+    .calculator-title>h3 {
+        font-size: 1.5rem;
+    }
+    /* Testimonials Section */
+    .testimonials-title>h1 {
+        font-size: 2rem;
+    }
+    .testimonials-text>p {
+        font-size: 1rem;
+    }
+    .mySlides {
+        height: 250px;
+    }
+    .testimonials-rating>p {
+        font-size: 1.2rem;
+    }
+    /* Experts Section */
+    .experts-title>h1 {
+        font-size: 2rem;
+    }
+    .experts-card-front>h2 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .experts-card-front>img {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width:414px) {
@@ -1088,6 +2449,74 @@ a {
     }
     .credibility-content>img {
         width: 30%;
+    }
+    /* Benefits Section */
+    .benefits-wrapper {
+        width: 90%;
+    }
+    .benefits-card-front>h2 {
+        width: 68%;
+        font-size: 1.2rem;
+    }
+    /* Calculator Section */
+    .calculator-title>h3 {
+        font-size: 1.2rem;
+    }
+    /* Testimonials Section */
+    .mySlides {
+        height: 350px;
+    }
+    .testimonials-customer-name>h3 {
+        font-size: 1.2rem;
+    }
+    /* Experts Section */
+    .experts-wrapper {
+        width: 90%;
+    }
+    .experts-card-front>h2 {
+        width: 68%;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    /* Calculator Section */
+    .calculator-box>.title-section>h3 {
+        font-size: 1em;
+    }
+    .comparison-main-box {
+        margin: 0 auto;
+        padding: 0;
+    }
+    #comparison-box-qc-wrapper,
+    #comparison-box-ac-wrapper,
+    #ac-kwh-selection {
+        width: 95%;
+    }
+    #slider-and-results-wrapper {
+        width: 95%;
+    }
+    .comparison-box-qc,
+    .comparison-box-ac {
+        width: 100%;
+    }
+    .selection-box-ac>h2,
+    .selection-box>h2 {
+        font-size: 1.5em;
+    }
+    .hours-box>h2,
+    .day-title,
+    .month-title,
+    .year-title,
+    #slider-and-results-wrapper>.title-section>h3,
+    #slider-day-results,
+    #slider-month-results,
+    #slider-year-results,
+    #slider-and-results-kwh-wrapper>.title-section>h3,
+    #slider-day-results-ac,
+    #slider-month-results-ac,
+    #slider-year-results-ac {
+        font-size: 1.2em !important;
     }
 }
 
