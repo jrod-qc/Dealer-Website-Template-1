@@ -385,6 +385,9 @@ a {
 }
 
 
+/* This is the Home Page */
+
+
 /* Hero Section */
 
 .hero-container {
@@ -1914,6 +1917,7 @@ input[type="range"]::-moz-range-thumb::before {
 .roi-container {
     width: 100%;
     height: auto;
+    padding: 100px 0;
 }
 
 .roi-wrapper {
@@ -1936,12 +1940,229 @@ input[type="range"]::-moz-range-thumb::before {
     width: 85%;
     max-width: 665px;
     font-size: 2.2rem;
-    letter-spacing: 2px;
 }
 
 .roi-content>img {
     width: 100%;
 }
+
+
+/* Start Saving Section */
+
+.start-saving-container {
+    width: 100%;
+    height: auto;
+    background-color: #0a205a;
+}
+
+.start-saving-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.start-saving-content:nth-child(1) {
+    width: 40%;
+}
+
+.start-saving-content:nth-child(2) {
+    width: 59%;
+}
+
+.start-saving-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-saving-content>img {
+    width: 100%;
+}
+
+.start-saving-text {
+    width: 80%;
+}
+
+.start-saving-text>h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.start-saving-text>h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 700px;
+}
+
+
+/* Footer Section */
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-color: #38ae19;
+}
+
+.footer-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content:nth-child(1) {
+    width: 100%;
+    height: 400px;
+    background-image: url("images/footer-section.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-content:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #38ae19;
+    padding: 50px 0;
+}
+
+.footer-content-left {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-content-left-text {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-content-left-text>p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.footer-content-left-text>p>a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer-content-left-text>p>a:hover {
+    color: #0a205a;
+}
+
+.footer-content-left-text>p:nth-child(1)>img {
+    width: 30%;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-content-left-text>p:nth-child(2)>img {
+    width: 7%;
+    margin: 0;
+}
+
+.footer-content-left-text>p:nth-child(3)>img {
+    width: 7%;
+    margin: 0;
+}
+
+.footer-content-right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-nav {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-nav>li {
+    width: 30%;
+    list-style: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-nav>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav>li>a:hover {
+    color: #0a205a;
+}
+
+.footer-rights {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-rights>p {
+    color: #fff;
+    margin: 0;
+}
+
+
+/* This is the Products Page */
+
+
+/* Hero Section (Products) */
+
+.hero-container-products {
+    width: 100%;
+    height: 800px;
+    background-color: #0a205a;
+}
+
+.hero-wrapper-products {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-wrapper-products>img {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.hero-content-products {}
 
 
 /* Media Queries */
@@ -2012,6 +2233,13 @@ input[type="range"]::-moz-range-thumb::before {
     .call-to-action-content:nth-child(2)>h2 {
         font-size: 2.5rem;
     }
+    /* Start Saving Section */
+    .start-saving-text>h1 {
+        font-size: 3rem;
+    }
+    .start-saving-text {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:1080px) {
@@ -2057,6 +2285,10 @@ input[type="range"]::-moz-range-thumb::before {
     .call-to-action-content:nth-child(2)>h2 {
         font-size: 1.9rem;
     }
+    /* Testimonials Section */
+    .testimonials-btn-container {
+        width: 50%;
+    }
     /* Experts Section */
     .benefits-wrapper {
         width: 31%;
@@ -2064,6 +2296,14 @@ input[type="range"]::-moz-range-thumb::before {
     /* ROI Section */
     .roi-content>h2 {
         font-size: 1.4rem;
+    }
+    /* Start Saving Section */
+    .start-saving-text>h1 {
+        font-size: 3rem;
+    }
+    .start-saving-text>h2 {
+        font-size: 1.4rem;
+        max-width: 500px;
     }
 }
 
@@ -2168,6 +2408,47 @@ input[type="range"]::-moz-range-thumb::before {
     .experts-card-front>img {
         width: 35%;
     }
+    /* Start Saving Section */
+    .start-saving-content:nth-child(1) {
+        width: 90%;
+    }
+    .start-saving-content:nth-child(2) {
+        width: 90%;
+    }
+    .start-saving-content>img {
+        width: 70%;
+    }
+    .start-saving-container {
+        padding: 100px 0;
+    }
+    /* Footer Section */
+    .footer-content-right {
+        justify-content: center;
+    }
+    .footer-nav>li {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    /* Footer Section */
+    .footer-content-left {
+        width: 90%;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .footer-content-left-text>p {
+        justify-content: center;
+    }
+    .footer-content-right {
+        width: 90%;
+    }
+    .footer-nav>li {
+        text-align: center;
+    }
+    .footer-rights {
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -2254,6 +2535,8 @@ input[type="range"]::-moz-range-thumb::before {
     /* Call to Action Section */
     .call-to-action-container {
         background-position: left;
+        background-color: #00000084;
+        background-blend-mode: overlay;
     }
     .call-to-action-wrapper {
         flex-direction: column-reverse;
@@ -2275,6 +2558,9 @@ input[type="range"]::-moz-range-thumb::before {
     .testimonials-title>h1 {
         font-size: 2.5rem;
     }
+    .testimonials-btn-container>a {
+        font-size: 1.2rem;
+    }
     /* Experts Section */
     .experts-card-front>h2 {
         width: 60%;
@@ -2291,6 +2577,10 @@ input[type="range"]::-moz-range-thumb::before {
         width: 90%;
     }
     .roi-content>h2 {
+        width: 90%;
+    }
+    /* Start Saving Section */
+    .start-saving-content>img {
         width: 90%;
     }
 }
@@ -2469,6 +2759,9 @@ input[type="range"]::-moz-range-thumb::before {
     .testimonials-customer-name>h3 {
         font-size: 1.2rem;
     }
+    .testimonials-btn-container {
+        width: 80%;
+    }
     /* Experts Section */
     .experts-wrapper {
         width: 90%;
@@ -2476,6 +2769,39 @@ input[type="range"]::-moz-range-thumb::before {
     .experts-card-front>h2 {
         width: 68%;
         font-size: 1.2rem;
+    }
+    /* ROI Section */
+    .roi-content>h2 {
+        font-size: 1.2rem;
+    }
+    /* Start Saving Section */
+    .start-saving-text>h1 {
+        font-size: 2rem;
+    }
+    .start-saving-text>h2 {
+        font-size: 1.2rem;
+    }
+    /* Footer Section */
+    .footer-content-left-text {
+        width: 100%;
+    }
+    .footer-content-left-text>p:nth-child(2)>img {
+        width: 10%;
+    }
+    .footer-content-left-text>p:nth-child(3)>img {
+        width: 10%;
+    }
+    .footer-content-right {
+        width: 100%;
+    }
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav>li {
+        width: 50%;
+    }
+    .footer-rights>p {
+        text-align: center;
     }
 }
 
@@ -2517,6 +2843,10 @@ input[type="range"]::-moz-range-thumb::before {
     #slider-month-results-ac,
     #slider-year-results-ac {
         font-size: 1.2em !important;
+    }
+    /* Testimonials Section */
+    .testimonials-text {
+        width: 100%;
     }
 }
 
