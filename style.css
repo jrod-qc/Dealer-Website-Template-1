@@ -492,6 +492,145 @@ a {
     max-width: 700px;
 }
 
+
+/* Benefits Page (Hero Section) */
+
+.benefits-hero-container {
+    width: 100%;
+    height: 80%;
+    padding: 230px 0 100px 0;
+    /* max-height: 600px; */
+    background-image: url("images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.benefits-hero-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-hero-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-hero-content:nth-child(1)>img {
+    width: 100%;
+}
+
+.benefits-hero-text-content {
+    width: 100%;
+    max-width: 700px;
+}
+
+.benefits-main-header-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.benefits-main-header-text>h1 {
+    width: 95%;
+    max-width: 800px;
+    color: #fff;
+    font-size: 4.3rem;
+    text-align: center;
+}
+
+.benefits-main-header-text>span {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: auto;
+    color: #fff;
+    top: 95px;
+    right: 115px;
+}
+
+.trademark {
+    font-size: 2rem !important;
+    /* border: 1px solid; */
+}
+
+.benefits-hero-text-content>ul {
+    width: 100%;
+    height: auto;
+}
+
+.benefits-hero-text-content>ul>li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.benefits-hero-text-content>ul>li>span {
+    width: 5%;
+    color: #38ae19;
+    font-size: 2rem;
+}
+
+.benefits-hero-text-content>ul>li>h3 {
+    width: 92%;
+    color: #fff;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.benefits-hero-request-btn-container {
+    width: 75%;
+    background-color: #38ae19;
+    margin-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.benefits-hero-request-btn-container:hover {
+    background-color: #277e11;
+}
+
+.benefits-hero-request-btn-container>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.benefits-hero-content:nth-child(3) {
+    display: none;
+}
+
+
+/* Benefits Page (Hero Section) End */
+
 .main-header-text {
     display: flex;
     flex-wrap: wrap;
@@ -1742,11 +1881,6 @@ input[type="range"]::-moz-range-thumb::before {
 }
 
 
-/* * {
-    box-sizing: border-box
-} */
-
-
 /* Slideshow container */
 
 .slideshow-container {
@@ -2861,6 +2995,155 @@ input[type="range"]::-moz-range-thumb::before {
 }
 
 
+/* Benefits Page */
+
+.keep-your-money-container {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+.keep-your-money-wrapper {
+    width: 100%;
+    height: auto;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.keep-your-money-title {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-your-money-title>h2 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.keep-your-money-title:nth-child(7)>h2 {
+    padding: 30px 0 0 0;
+}
+
+.keep-your-money-title>p {
+    font-size: 1.2rem;
+}
+
+.keep-your-money-content {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 30px;
+    /* border: 1px solid red; */
+}
+
+.keep-your-money-content:nth-child(4) {
+    background-color: #0a205a;
+}
+
+.keep-your-money-content:nth-child(5) {
+    background-color: #0a205a;
+    flex-direction: row-reverse;
+}
+
+.keep-your-money-content:nth-child(6) {
+    background-color: #0a205a;
+}
+
+.keep-your-money-content-box {
+    width: 49%;
+}
+
+.keep-your-money-content-box>img {
+    width: 100%;
+}
+
+.keep-your-money-content>img {
+    width: 100%;
+}
+
+.keep-your-money-content-image {
+    width: 70%;
+}
+
+.keep-your-money-content-image>img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.keep-your-money-content-text {
+    width: 30%;
+}
+
+.keep-your-money-content-text-container {
+    width: 90%;
+}
+
+.keep-your-money-content-text-container>h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: avenir bold;
+}
+
+.keep-your-money-content-text-container>h3 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.keep-your-money-content-text-container>p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* QC Tech Section */
+
+.qc-tech-container {
+    width: 100%;
+    background: #0a205a;
+    padding: 100px 0;
+}
+
+.qc-tech-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.qc-tech-content {
+    width: 49%;
+    text-align: center;
+}
+
+.qc-tech-content>img {
+    width: 50%;
+}
+
+.qc-tech-content>h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.qc-tech-content>p {
+    width: 60%;
+    color: #fff;
+    text-align: center;
+}
+
+
 /* Media Queries */
 
 @media only screen and (max-width:1385px) {
@@ -2882,6 +3165,14 @@ input[type="range"]::-moz-range-thumb::before {
     /* ROI Section */
     .roi-content>h2 {
         font-size: 1.9rem;
+    }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-hero-text-content>ul {
+        width: 90%;
+    }
+    .benefits-hero-text-content>ul>li>h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -2952,6 +3243,10 @@ input[type="range"]::-moz-range-thumb::before {
     .products-footer-form-wrapper>h2 {
         font-size: 2rem;
         max-width: 360px;
+    }
+    /* Keep Your Money Section */
+    .keep-your-money-content-text-container>h2 {
+        font-size: 1.8rem
     }
 }
 
@@ -3086,6 +3381,34 @@ input[type="range"]::-moz-range-thumb::before {
     .video-content>h2 {
         font-size: 2.5rem;
     }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-main-header-text>h1 {
+        font-size: 2.5rem;
+        max-width: 400px;
+    }
+    .benefits-hero-text-content>ul {
+        width: 100%;
+    }
+    .benefits-hero-text-content>ul>li>h3 {
+        font-size: 1.5rem;
+    }
+    .benefits-hero-request-btn-container>a {
+        font-size: 1.2rem;
+    }
+    .benefits-hero-text-content>ul>li>span {
+        width: 8%;
+    }
+    /* Keep You Money Section */
+    .keep-your-money-content-text-container>h2 {
+        font-size: 1.5rem;
+    }
+    .keep-your-money-content-text-container>h3 {
+        font-size: 1rem;
+    }
+    .keep-your-money-content-text-container>p {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width:951px) {
@@ -3149,6 +3472,9 @@ input[type="range"]::-moz-range-thumb::before {
     }
     .hero-content>img {
         width: 70%;
+    }
+    .hero-request-btn-container {
+        width: 100%;
     }
     /* Dealer Section */
     .dealer-badge-content {
@@ -3229,9 +3555,61 @@ input[type="range"]::-moz-range-thumb::before {
         font-size: 2.5rem;
         max-width: 460px;
     }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-hero-content {
+        width: 100%;
+    }
+    .benefits-hero-wrapper {
+        flex-direction: column-reverse;
+    }
+    .benefits-hero-content:nth-child(1) {
+        padding-top: 50px;
+    }
+    .benefits-hero-content:nth-child(1)>img {
+        width: 80%;
+    }
+    .benefits-hero-text-content>ul {
+        width: 70%;
+    }
+    .benefits-hero-content:nth-child(3) {
+        display: block;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .benefits-hero-content>img {
+        width: 70%;
+    }
+    /* Keep your Money Section */
+    .keep-your-money-content-image {
+        width: 50%;
+    }
+    .keep-your-money-content-text {
+        width: 50%;
+    }
+    .keep-your-money-title>h2 {
+        font-size: 2.5rem;
+    }
+    .keep-your-money-content-box {
+        width: 100%;
+    }
+    .keep-your-money-content-box {
+        width: 100%;
+    }
+    /* QC Tech Section */
+    .qc-tech-content>p {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width:850px) {
+    /* Call to Action Section */
+    .call-to-action-content:nth-child(1) {
+        width: 50%;
+    }
+    .call-to-action-content:nth-child(2) {
+        width: 50%;
+    }
     /* Footer Section */
     .footer-content-left {
         width: 90%;
@@ -3250,6 +3628,7 @@ input[type="range"]::-moz-range-thumb::before {
     .footer-rights {
         justify-content: center;
     }
+    /* Products Page */
     .products-footer-content-left {
         width: 90%;
         justify-content: center;
@@ -3269,6 +3648,18 @@ input[type="range"]::-moz-range-thumb::before {
     }
     /* Video Section */
     .video-content>h2 {
+        font-size: 2rem;
+    }
+    /* Benefits Page */
+    /* Keep Your Money Section */
+    .keep-your-money-content-image {
+        width: 100%;
+    }
+    .keep-your-money-content-text {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .keep-your-money-title>h2 {
         font-size: 2rem;
     }
 }
@@ -3432,9 +3823,19 @@ input[type="range"]::-moz-range-thumb::before {
         max-width: 360px;
     }
     /* Products Page */
+    /* Hero Section */
     .hero-content-products>h1 {
         max-width: 400px;
         font-size: 2rem;
+    }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-main-header-text>h1 {
+        font-size: 3.3rem;
+        max-width: 500px;
+    }
+    .benefits-hero-text-content>ul {
+        width: 80%;
     }
 }
 
@@ -3619,6 +4020,54 @@ input[type="range"]::-moz-range-thumb::before {
     .products-footer-points>li>p {
         font-size: 1rem;
     }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-hero-text-content>ul {
+        width: 65%;
+    }
+    .benefits-hero-text-content>ul>li>span {
+        width: 7%;
+        font-size: 1.5rem;
+    }
+    .benefits-main-header-text>h1 {
+        font-size: 1.9rem;
+        max-width: 340px;
+    }
+    .benefits-hero-text-content>ul>li>h3 {
+        width: 88%;
+        font-size: 1.1rem;
+    }
+    .benefits-hero-request-btn-container>a {
+        font-size: 1.1rem;
+    }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-hero-text-content>ul {
+        width: 65%;
+    }
+    .benefits-hero-text-content>ul>li>span {
+        width: 7%;
+        font-size: 1.5rem;
+    }
+    .benefits-main-header-text>h1 {
+        font-size: 1.9rem;
+        max-width: 340px;
+    }
+    .benefits-hero-text-content>ul>li>h3 {
+        width: 88%;
+        font-size: 1.1rem;
+    }
+    .benefits-hero-request-btn-container>a {
+        font-size: 1.1rem;
+    }
+    /* Tech Section */
+    .qc-tech-content {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .qc-tech-content>img {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width:414px) {
@@ -3733,6 +4182,23 @@ input[type="range"]::-moz-range-thumb::before {
     .hero-content-products>h1 {
         max-width: 300px;
         font-size: 1.3rem;
+    }
+    /* Benefits Page */
+    /* Hero Section */
+    .benefits-hero-text-content>ul {
+        width: 91%;
+    }
+    .benefits-hero-content>img {
+        width: 90%;
+    }
+    /* Keep You Money Section */
+    .keep-your-money-title>h2 {
+        font-size: 1.5rem;
+        max-width: 300px;
+    }
+    .keep-your-money-title>p {
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
