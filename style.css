@@ -8,6 +8,36 @@
     src: url("fonts/transfonter.org-unpack-20210617-162034/Avenir-Heavy-05.ttf");
 }
 
+
+/* Error Msg */
+
+.error-main-text-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-main-text-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-main-text-content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 * {
     padding: 0;
     margin: 0 auto;
