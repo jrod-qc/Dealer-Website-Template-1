@@ -66,38 +66,61 @@ function formModal() {
 formModal();
 
 // Testimonials Slider
-function testimonialsSlider() {
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-testimonialsSlider();
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+
+// Active Nav
+
+// function activeNav() {
+//     // Get the container element
+//     var navContainer = document.getElementsByClassName("nav-list");
+
+//     // Get all buttons with class="btn" inside the container
+//     var navAnchor = navContainer.getElementsByClassName("nav-a");
+
+//     // Loop through the buttons and add the active class to the current/clicked button
+//     for (var i = 0; i < navAnchor.length; i++) {
+//         navAnchor[i].addEventListener("click", function() {
+//             var activeAnchor = document.getElementsByClassName("nav-active");
+//             activeAnchor[0].className = activeAnchor[0].className.replace(" navAnchorActive", "");
+//             this.className += " navAnchorActive";
+//         });
+//     }
+// }
+
+// activeNav();
+
+
+
+
 
 // This is the Calculator Section
 function calSlider() {
@@ -108,6 +131,8 @@ function calSlider() {
     var sliderYearResults = document.getElementById("slider-year-results");
     document.getElementById("stealth-models").value = "4.8";
     document.getElementById("fan-selection").value = "stealth";
+    // $("#stealth-models").value = "4.8";
+    // $("#fan-selection").value = "stealth";
 
     // This is the Template for the fan Object
 
